@@ -1,20 +1,23 @@
 
 .top-nav {
-    background-color: var(--primary-color);
     width: 100vw;
-    /* width: 900px; */
     color: var(--light);
-    /* position: absolute; */
-  
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 100px;
 }
 
 .nav-brand {
     height: 20px;
     margin: 32px;
+}
+
+.link-group {
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .user-profile {

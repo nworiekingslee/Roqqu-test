@@ -1,0 +1,27 @@
+.side-nav {
+    background-color: var(--primary-color);
+    float: left;
+    min-height: 100vh;
+    width: 90px;
+    
+}
+
+.nav-group {
+    padding: 16px;
+    position: fixed;
+
+}
+
+.nav-item {
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin: 16px auto;
+    
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.nav-item:hover {
+    background-color: var(--dark-highlight);
+    
+}
