@@ -8,6 +8,8 @@
 .nav-brand {
     height: 20px;
     margin: 32px;
+    cursor: pointer;
+    margin-left: 64px;
 }
 
 .link-group {
@@ -20,6 +22,15 @@
     align-items: center;
 }
 
+.profile-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    margin: 24px;
+    margin-right: 64px;        
+}
+
 .user-profile {
     height: 52px;
     width: 52px;
@@ -30,6 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .user-profile > img {
@@ -41,5 +53,6 @@
 }
 
 .icon {
-    height: 24px
+    height: 24px;
+    cursor: pointer;
 }

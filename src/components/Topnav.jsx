@@ -8,15 +8,7 @@ const Topnav = () => {
     <div className="top-nav">
       <div className="link-group">
         <img src={logo} alt="Roqqu" className="nav-brand" />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            width: 100,
-            margin: 24,
-          }}
-        >
+        <div className="profile-group">
           <img src={notification} alt="notification" className="icon" />
           <div className="user-profile">
             <img src={profile} alt="user" />
