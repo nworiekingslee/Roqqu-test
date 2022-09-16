@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Roqqu Test
 
 The second stage is a practical stage and you are required to do the short task below:
 - Open the link below, build out pages 3 and 4 in a react project.
