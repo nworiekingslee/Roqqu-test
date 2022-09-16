@@ -5,6 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  
+}
+
+body {
+  --primary-color: #080F24;
+  --background: #020717;
+  --text: #ffffff;
+  --link:##91A0CED8;
+  --link-active: #6E97F5;
+  --CTA: #0165FF;
+  --success: #13A583;
+  --BTC: #D17300;
+
+
+
+  --spacing: 16px;
+
 }
 
 code {

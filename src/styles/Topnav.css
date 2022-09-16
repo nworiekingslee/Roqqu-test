@@ -1,0 +1,7 @@
+
+.top-nav {
+    background-color: var(--primary-color);
+    height: 200px;
+    width: 100%;
+    color: var(--light)
+}
