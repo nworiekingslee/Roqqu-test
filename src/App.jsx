@@ -1,11 +1,12 @@
 import "./styles/App.css";
-import Topnav from "./components/Topnav";
+import Nav from "./components/Nav";
+import Home from "./routes/Home";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello Roqqu</h1>
-      <Topnav />
+      <Nav />
+      <Home />
     </div>
   );
 }
