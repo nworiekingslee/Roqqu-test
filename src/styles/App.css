@@ -3,22 +3,36 @@
     grid-template-columns: auto 350px;
     padding: 24px;
     column-gap: 24px;
+
+    max-width:  1536px;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 1024px) {
     .grid-container {
         display:grid;
-        grid-template-columns: 400px auto;
+        grid-template-columns: auto ;
         padding: 24px;
         column-gap: 24px;
     }
   }
 
-@media only screen and (max-width: 768px) {
-    .grid-container {
-        display:block;
-        grid-template-columns: auto;
-        padding: 24px;
-        column-gap: 24px;
-    }
+
+  /* common classes */
+  .mb-2 {
+      margin-bottom: 2rem;
+  }
+
+  .text-sm {
+    font-size: 14px;
+  }
+
+  .text-xs {
+    font-size: 12px;
+  }
+
+  .h-2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 2.5rem
   }

@@ -1,5 +1,6 @@
 import "../styles/SideNav.css";
 
+// icons import
 import stack from "../images/navigation/stack.svg";
 import chart from "../images/navigation/bar-chart.svg";
 import book from "../images/navigation/book.svg";
@@ -13,7 +14,7 @@ const SideNav = () => {
   return (
     <div className="side-nav">
       <div className="nav-group">
-        <div className="nav-item">
+        <div className="nav-item active">
           <img src={stack} alt="" />
         </div>
         <div className="nav-item">

@@ -9,7 +9,14 @@
 .nav-group {
     padding: 16px;
     position: fixed;
+    height: 100%;
 
+    background-color: var(--primary-color);
+
+}
+
+.nav-group .active {
+    background-color: var(--dark-highlight);
 }
 
 .nav-item {

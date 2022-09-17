@@ -1,4 +1,6 @@
 import "../styles/Topnav.css";
+
+// icons import
 import logo from "../images/roqqu-logo.png";
 import profile from "../images/profile.png";
 import notification from "../images/navigation/notification.svg";
