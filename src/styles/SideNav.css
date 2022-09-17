@@ -9,6 +9,9 @@
 .nav-group {
     padding: 16px;
     position: fixed;
+    height: 100%;
+
+    background-color: var(--primary-color);
 
 }
 

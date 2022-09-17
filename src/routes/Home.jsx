@@ -1,6 +1,7 @@
 import CryptoContainer from "../components/CryptoContainer";
 import HomeHero from "../components/HomeHero";
 import Subnav from "../components/Subnav";
+import SideContent from "../components/SideContent";
 
 // css import
 import "../styles/Home.css";
@@ -13,7 +14,10 @@ const Home = () => {
         <Subnav />
         <CryptoContainer />
       </div>
-      <div>The far right</div>
+      <div>
+        {" "}
+        <SideContent />
+      </div>
     </div>
   );
 };
