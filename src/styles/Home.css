@@ -13,7 +13,7 @@
     margin-right: 32px;
     height: 100%;
     max-width: 540px;
-    
+   
 }
 
 .hero > div > h1 {
@@ -42,10 +42,11 @@
 
 .hero button:hover >  img {
     margin-left: 20px;
+    transition: 0.3s all ease;
 }
 
 .hero button:hover {
-    transition: 0.3 all ease;
+    transition: 0.3s all ease;
     opacity : .9
 }
 
@@ -76,4 +77,49 @@
     .hero > img {
         max-width: 225px;
     }
+  }
+
+
+  .sub-nav {
+      margin-top: 2rem;
+      border-bottom: 1px solid var(--primary-color);
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+  .sub-nav span {
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+  .sub-nav span > img {
+
+      margin-left: 4px;
+    }
+
+
+  .sub-nav-group {
+      display: flex;
+  }
+
+  .sub-nav-group p {
+      padding: 24px;
+      color: var(--link);
+      cursor: pointer;
+    }
+    
+    .sub-nav-group p:hover {
+        color: var(--link-active);
+        transition: .3s all ease;
+     
+  }
+
+  .sub-nav-group .active {
+      border-bottom: 2px solid var(--link-active);
+      color: var(--link-active);
+      
   }

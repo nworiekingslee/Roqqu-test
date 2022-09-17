@@ -14,7 +14,7 @@ const SideNav = () => {
   return (
     <div className="side-nav">
       <div className="nav-group">
-        <div className="nav-item">
+        <div className="nav-item active">
           <img src={stack} alt="" />
         </div>
         <div className="nav-item">

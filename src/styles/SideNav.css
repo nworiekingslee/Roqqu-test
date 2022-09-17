@@ -12,6 +12,10 @@
 
 }
 
+.nav-group .active {
+    background-color: var(--dark-highlight);
+}
+
 .nav-item {
     border-radius: 8px;
     padding: 16px 18px;
