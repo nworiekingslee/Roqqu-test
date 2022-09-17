@@ -1,5 +1,6 @@
 import "../styles/SideNav.css";
 
+// icons import
 import stack from "../images/navigation/stack.svg";
 import chart from "../images/navigation/bar-chart.svg";
 import book from "../images/navigation/book.svg";
