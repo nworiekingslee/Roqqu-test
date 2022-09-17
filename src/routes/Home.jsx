@@ -1,3 +1,4 @@
+import CryptoContainer from "../components/CryptoContainer";
 import HomeHero from "../components/HomeHero";
 import Subnav from "../components/Subnav";
 
@@ -10,6 +11,7 @@ const Home = () => {
       <div>
         <HomeHero />
         <Subnav />
+        <CryptoContainer />
       </div>
       <div>The far right</div>
     </div>

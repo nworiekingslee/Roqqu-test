@@ -2,7 +2,7 @@
     /* height: 360px; */
     background: transparent linear-gradient(102deg, #2733C4 0%, #9F19D1 100%) 0% 0% no-repeat padding-box;
     border-radius: 24px; 
-    padding: 24px 32px ;
+    padding: 32px ;
     
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,14 @@
 }
 
 .hero button {
-    width: 230px;
+    font-size: 18px;
+    color: var(--white);
+    background-color: black;
+    border: none;
+    padding: 20px 24px;
+    border-radius: 8px;
+
+    width: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -56,17 +63,6 @@
     text-transform: uppercase;
 }
 
-.hero button {
-    margin-bottom: 32px;
-    font-size: 18px;
-    color: var(--white);
-    background-color: black;
-    border: none;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-
 .hero > img {
     height: 225px;
 }
@@ -90,6 +86,7 @@
     }
 
   .sub-nav span {
+      cursor: pointer;
 
       display: flex;
       align-items: center;
@@ -122,4 +119,53 @@
       border-bottom: 2px solid var(--link-active);
       color: var(--link-active);
       
+  }
+
+
+/* Styling for the crypto components begin here */
+  .crypto-container {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: auto auto;
+
+      max-width: 800px;
+  }
+
+
+  .crypto-component {
+      background-color: var(--primary-color);
+      max-width: 320px;
+      border-radius: 8px;
+      padding: 24px;
+      margin: 1rem 1rem 1rem 0;
+
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .crypto-component img {
+      height: 54px;
+      margin-right: 12px;
+  }
+
+  .crypto-details {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  .crypto-details > p {
+      display: block;
+      width: 100%
+  }
+
+  .bold-text {
+      font-weight: 600;
+  }
+
+  .crypto-growth {
+      color: var(--success);
+      font-size: 10px;
+      text-align: right;
+      margin-top: 5px;
   }
