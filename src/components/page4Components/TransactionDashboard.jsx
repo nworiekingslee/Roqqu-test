@@ -1,5 +1,5 @@
 // icon imports
-import btc from "../images/btc-logo.svg";
+import btc from "../../images/btc-logo.svg";
 
 const TransactionDashboard = ({ coin }) => {
   return (

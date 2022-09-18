@@ -1,5 +1,5 @@
 import { Route, Switch } from "react-router-dom";
-import Nav from "./components/Nav";
+import Nav from "./components/homeComponents/Nav";
 import Home from "./routes/Home";
 import TransactionPage from "./routes/TransactionPage";
 

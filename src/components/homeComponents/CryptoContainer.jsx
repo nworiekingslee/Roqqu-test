@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 // icon impor0t
-import btc from "../images/btc-logo.svg";
-import eth from "../images/eth-logo.svg";
-import bnb from "../images/bnb-logo.svg";
-import tetherUsdt from "../images/tether-usdt-logo.svg";
+import btc from "../../images/btc-logo.svg";
+import eth from "../../images/eth-logo.svg";
+import bnb from "../../images/bnb-logo.svg";
+import tetherUsdt from "../../images/tether-usdt-logo.svg";
 
 const CryptoContainer = () => {
   return (

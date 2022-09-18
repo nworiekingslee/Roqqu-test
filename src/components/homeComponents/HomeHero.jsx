@@ -1,6 +1,6 @@
 // icons import
-import heroImage from "../images/hero-illustration.svg";
-import arrowRight from "../images/arrow_right.svg";
+import heroImage from "../../images/hero-illustration.svg";
+import arrowRight from "../../images/arrow_right.svg";
 
 const HomeHero = () => {
   return (

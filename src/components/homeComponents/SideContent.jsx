@@ -1,8 +1,7 @@
 // icon imports
-
-import up from "../images/up.svg";
-import down from "../images/down.svg";
-import exchange from "../images/switch.svg";
+import up from "../../images/up.svg";
+import down from "../../images/down.svg";
+import exchange from "../../images/switch.svg";
 
 const SideContent = () => {
   return (

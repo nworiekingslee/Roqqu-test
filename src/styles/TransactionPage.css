@@ -32,7 +32,7 @@
     padding: 32px;
     text-align: right;
     border-left: 1px solid var(--dark-highlight);
-    width: 100%
+    width: 100%;
 }
 
 .dasboard-item p{
@@ -44,9 +44,6 @@
     color: var(--link)
 }
 
-.red {
-    background-color: red;
-}
 
 @media only screen and (max-width: 768px) {
     .dasboard-item {
@@ -112,4 +109,13 @@
 
   .action-item:hover > .font-icon{
    color: #FFFFFF;
+  }
+
+  .chart-wrapper {
+      margin-top: 2rem;
+      background-color: var(--background);
+  }
+
+  .order-book {
+
   }

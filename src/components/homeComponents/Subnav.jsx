@@ -1,5 +1,5 @@
 // icons import
-import caretDown from "../images/caret_down.svg";
+import caretDown from "../../images/caret_down.svg";
 
 const Subnav = () => {
   return (

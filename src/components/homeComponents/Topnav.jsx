@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
 // icons import
-import logo from "../images/roqqu-logo.png";
-import profile from "../images/profile.png";
-import notification from "../images/navigation/notification.svg";
+import logo from "../../images/roqqu-logo.png";
+import profile from "../../images/profile.png";
+import notification from "../../images/navigation/notification.svg";
 
 // css import
-import "../styles/Topnav.css";
+import "../../styles/Topnav.css";
 
 const Topnav = () => {
   return (
