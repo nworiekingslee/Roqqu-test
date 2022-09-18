@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 // icon impor0t
 import btc from "../images/btc-logo.svg";
 import eth from "../images/eth-logo.svg";
@@ -7,7 +9,11 @@ import tetherUsdt from "../images/tether-usdt-logo.svg";
 const CryptoContainer = () => {
   return (
     <div className="crypto-container">
-      <div className="crypto-component">
+      <Link
+        to="/BTC"
+        style={{ textDecoration: "none", color: "var(--white)" }}
+        className="crypto-component"
+      >
         <div className="crypto-details">
           <img src={btc} alt="btc" />
           <div>
@@ -19,9 +25,13 @@ const CryptoContainer = () => {
           <p className="bold-text">54372.94 USD</p>{" "}
           <p className="crypto-growth">+2.43%</p>
         </div>
-      </div>
+      </Link>
 
-      <div className="crypto-component">
+      <Link
+        to="/USDT"
+        style={{ textDecoration: "none", color: "var(--white)" }}
+        className="crypto-component"
+      >
         <div className="crypto-details">
           <img src={tetherUsdt} alt="btc" />
           <div>
@@ -33,9 +43,13 @@ const CryptoContainer = () => {
           <p className="bold-text">1.02 USD</p>{" "}
           <p className="crypto-growth">+2.43%</p>
         </div>
-      </div>
+      </Link>
 
-      <div className="crypto-component">
+      <Link
+        to="/ETH"
+        style={{ textDecoration: "none", color: "var(--white)" }}
+        className="crypto-component"
+      >
         <div className="crypto-details">
           <img src={eth} alt="btc" />
           <div>
@@ -47,9 +61,13 @@ const CryptoContainer = () => {
           <p className="bold-text">54372.94 USD</p>{" "}
           <p className="crypto-growth">+2.43%</p>
         </div>
-      </div>
+      </Link>
 
-      <div className="crypto-component">
+      <Link
+        to="/BNB"
+        style={{ textDecoration: "none", color: "var(--white)" }}
+        className="crypto-component"
+      >
         <div className="crypto-details">
           <img src={bnb} alt="btc" />
           <div>
@@ -61,7 +79,7 @@ const CryptoContainer = () => {
           <p className="bold-text">54372.94USD</p>{" "}
           <p className="crypto-growth">+2.43%</p>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };

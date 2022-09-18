@@ -8,14 +8,13 @@ import "../styles/Home.css";
 
 const Home = () => {
   return (
-    <div className="grid-container">
+    <div className="grid-container container">
       <div>
         <HomeHero />
         <Subnav />
         <CryptoContainer />
       </div>
       <div>
-        {" "}
         <SideContent />
       </div>
     </div>
