@@ -59,7 +59,7 @@
       background-color: var(--primary-color);
       border-radius: 8px;
       padding: 24px;
-      margin-top: 32px;
+      margin-top: 1.5rem;
   }
 
   .chart-header {
@@ -117,5 +117,77 @@
   }
 
   .order-book {
-
+    background-color: var(--primary-color);
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    padding: 1rem
   }
+
+  
+  .order-header {
+      font-weight: 700;
+      font-size: 18px;
+      margin: 16px
+    }
+
+    .order-book table {
+       width: 100%;
+       background-color: var(--background);
+       font-size: 12px;
+       padding: .6rem 8px
+      }
+
+    .order-book table th {
+       color: #E4E4FA91;
+       text-transform: uppercase;
+       font-weight: normal;
+       text-align: left;
+       padding-bottom: 1rem !important;
+      }
+
+    .order-book table th,td {
+       padding : 4px;
+       position: relative
+      }
+    
+    .order-book tr td:first-child {
+        padding-left: 16px
+      }
+
+      .order-entry-bar {
+          position: absolute;
+          top: 0;
+          left:0;
+          height: 100%;
+          width: 100%;
+      }
+
+      .bear .order-entry-bar {
+          background-color: #F07A642F;
+      }
+      
+      .bear tr td:first-child {
+        color: #FF8686;
+      }
+
+      .bull .order-entry-bar {
+          background-color: #13A5831C;
+      }
+
+      .bull tr td:first-child {
+        color: var(--success);
+      }
+
+      .order-book .current-price {
+          padding: 1rem;
+          border: 1px solid var(--primary-color);
+          background-color: var(--background);
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+
+
+

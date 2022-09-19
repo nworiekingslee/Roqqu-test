@@ -4,9 +4,14 @@ import ChartContainer from "../components/page4Components/ChartContainer";
 // css import
 import "../styles/TransactionPage.css";
 import OrderBook from "../components/page4Components/OrderBook";
+import { useEffect } from "react";
 
 const TransactionPage = (props) => {
   const coin = props.match.params.coin;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <div className="single-col container">
@@ -14,8 +19,13 @@ const TransactionPage = (props) => {
 
       <div className="grid-container">
         <ChartContainer coin={coin} />
-        <OrderBook />
+        <div>
+          <OrderBook coin={coin} />
+        </div>
       </div>
+
+      {/* The items beneath these components 
+      on the design are not very visible */}
     </div>
   );
 };
