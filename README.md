@@ -6,4 +6,7 @@ The second stage is a practical stage and you are required to do the short task 
 https://xd.adobe.com/view/16c919ed-43ef-4b92-8b99-4b8d335a7b9d-439a/
 
 
-## Also, incase you are wondering how to move to the "page 4" route, the "coins" are clickable.
+## My note
+
+- There's no visual to show how the pages would look like on mobile so I gave minimum effort to make the pages responsive. 
+- Also, incase you are wondering how to move to the "page 4" route, the "coins" are clickable.
