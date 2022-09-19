@@ -1,11 +1,21 @@
 .grid-container {
     display:grid;
     grid-template-columns: auto 350px;
-    padding: 24px;
     column-gap: 24px;
-
+    
+  }
+  
+  .container {
     max-width:  1536px;
     margin: 0 auto;
+    padding: 24px;
+  }
+  
+  .single-col {
+    display:grid;
+    grid-template-columns: auto ;
+    column-gap: 24px;
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -35,4 +45,8 @@
       font-size: 18px;
       font-weight: 700;
       margin-top: 2.5rem
+  }
+
+  .text-highlight {
+    color : var(--success)
   }

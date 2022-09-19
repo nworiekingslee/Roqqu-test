@@ -10,7 +10,8 @@
     padding: 16px;
     position: fixed;
     height: 100%;
-
+    
+    z-index: 10000000 !important;
     background-color: var(--primary-color);
 
 }

@@ -1,14 +1,14 @@
-import "../styles/SideNav.css";
+import "../../styles/SideNav.css";
 
 // icons import
-import stack from "../images/navigation/stack.svg";
-import chart from "../images/navigation/bar-chart.svg";
-import book from "../images/navigation/book.svg";
-import fire from "../images/navigation/fire.svg";
-import notification from "../images/navigation/notification.svg";
-import pulse from "../images/navigation/pulse.svg";
-import settings from "../images/navigation/settings.svg";
-import wallet from "../images/navigation/wallet.svg";
+import stack from "../../images/navigation/stack.svg";
+import chart from "../../images/navigation/bar-chart.svg";
+import book from "../../images/navigation/book.svg";
+import fire from "../../images/navigation/fire.svg";
+import notification from "../../images/navigation/notification.svg";
+import pulse from "../../images/navigation/pulse.svg";
+import settings from "../../images/navigation/settings.svg";
+import wallet from "../../images/navigation/wallet.svg";
 
 const SideNav = () => {
   return (
