@@ -1,12 +1,12 @@
-const OrderEntry = ({ priceUsdt, amount, total, percentageWidth }) => {
+const OrderEntry = ({ priceUsdt, amount, total, depth }) => {
   return (
     <tr>
       <td>
         {priceUsdt}
-        <div
-          style={{ width: `${percentageWidth}` }}
-          className="order-entry-bar"
-        ></div>
+        <span
+          style={{ width: `${depth}` }}
+          className=" depth-visualizer"
+        ></span>
       </td>
       <td>{amount}</td>
       <td>{total}</td>
