@@ -181,7 +181,8 @@
       .order-book .current-price {
           padding: 1rem;
           border: 1px solid var(--primary-color);
-          background-color: var(--background);
+          /* background-color: red; */
+          width: 100%;
 
           display: flex;
           justify-content: center;

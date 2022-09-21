@@ -30,7 +30,7 @@ const Chart = (props) => {
 
   console.log(coin);
   const [socketUrl, setSocketurl] = useState(
-    `wss://stream.binance.com:9443/ws/${coin}usdt@kline_5m`
+    `wss://stream.binance.com:9443/ws/${coin}usdt@kline_0m`
   );
   const [coinHistory, setCoinHistory] = useState([]);
   const { lastMessage } = useWebSocket(socketUrl);
