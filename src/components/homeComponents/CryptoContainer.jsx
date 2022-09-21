@@ -10,7 +10,7 @@ const CryptoContainer = () => {
   return (
     <div className="crypto-container">
       <Link
-        to="/btc"
+        to="/BTC"
         style={{ textDecoration: "none", color: "var(--white)" }}
         className="crypto-component"
       >
@@ -28,7 +28,7 @@ const CryptoContainer = () => {
       </Link>
 
       <Link
-        to="/usdt"
+        to="/USDT"
         style={{ textDecoration: "none", color: "var(--white)" }}
         className="crypto-component"
       >
@@ -46,7 +46,7 @@ const CryptoContainer = () => {
       </Link>
 
       <Link
-        to="/eth"
+        to="/ETH"
         style={{ textDecoration: "none", color: "var(--white)" }}
         className="crypto-component"
       >
@@ -64,7 +64,7 @@ const CryptoContainer = () => {
       </Link>
 
       <Link
-        to="/bnb"
+        to="/BNB"
         style={{ textDecoration: "none", color: "var(--white)" }}
         className="crypto-component"
       >

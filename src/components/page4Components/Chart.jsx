@@ -1,8 +1,34 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import useWebSocket from "react-use-websocket";
+import axios from "axios";
 import { createChart, CrosshairMode } from "lightweight-charts";
 
-const Chart = ({ coin }) => {
+// {"e":"kline",
+// "E":1663700068198,
+// "s":"BTCUSDT",
+// "k":
+//     {"t":1663700040000,
+//     "T":1663700219999,
+//     "s":"BTCUSDT",
+//     "i":"3m",
+//     "f":1849502104,
+//     "L":1849504063,
+//     "o":"18932.13000000",
+//     "c":"18945.08000000",
+//     "h":"18946.37000000",
+//     "l":"18931.27000000",
+//     "v":"128.92140000",
+//     "n":1960,
+//     "x":false,
+//     "q":"2441650.64343010",
+//     "V":"69.21793000",
+//     "Q":"1310970.72202140",
+//     "B":"0"}
+
+const Chart = (props) => {
+  const coin = props.coin.toLowerCase();
+
+  console.log(coin);
   const [socketUrl, setSocketurl] = useState(
     `wss://stream.binance.com:9443/ws/${coin}usdt@kline_5m`
   );
@@ -11,8 +37,20 @@ const Chart = ({ coin }) => {
 
   useEffect(() => {
     if (lastMessage !== null) {
-      // console.log(coinHistory.length);
-      setCoinHistory((prev) => [...prev, JSON.parse(lastMessage.data)]);
+      const modifiedMsg = JSON.parse(lastMessage.data);
+
+      // var d = new Date(1382086394000);
+
+      const newData = {
+        time: new Date(modifiedMsg.k.t),
+        open: modifiedMsg.k.o,
+        high: modifiedMsg.k.h,
+        low: modifiedMsg.k.l,
+        close: modifiedMsg.k.c,
+      };
+
+      setCoinHistory((prev) => [...prev, newData]);
+      console.log(coinHistory, "newData");
     }
   }, [lastMessage, setCoinHistory]);
 
@@ -43,13 +81,15 @@ const Chart = ({ coin }) => {
     });
 
     var candleSeries = chart.addCandlestickSeries({
-      upColor: "rgba(255, 144, 0, 1)",
-      downColor: "#000",
-      borderDownColor: "rgba(255, 144, 0, 1)",
-      borderUpColor: "rgba(255, 144, 0, 1)",
-      wickDownColor: "rgba(255, 144, 0, 1)",
-      wickUpColor: "rgba(255, 144, 0, 1)",
+      upColor: "#8CC176",
+      downColor: "#B82C0D",
+      borderUpColor: "#8CC176",
+      borderDownColor: "#B82C0D",
+      wickUpColor: "#8CC176",
+      wickDownColor: "#B82C0D",
     });
+
+    console.log("newData", coinHistory);
 
     candleSeries.setData([
       {
@@ -1103,10 +1143,10 @@ const Chart = ({ coin }) => {
       init();
       console.log("m-Loaded");
     }
-  }, []);
+  }, [coinHistory]);
 
   return (
-    <div className="chart-wrapper" id="chart1">
+    <div className="chart-wrapper" id="chart1" style={{ height: 500 }}>
       {/* {coinHistory.map((data, idx) => (
         <ul>
           <li key={idx}>{data ? data.k.h : null}</li>
