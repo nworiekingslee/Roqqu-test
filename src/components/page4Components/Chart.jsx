@@ -111,7 +111,7 @@ const Chart = (props) => {
           <li key={idx}>
             {data ? (
               <p>
-                Price: {data.high}, time: {data.time}
+                Price: {data.high}, date: {data.time}
               </p>
             ) : null}
           </li>
