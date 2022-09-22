@@ -1,14 +1,10 @@
 const OrderEntry = ({ priceUsdt, amount, total, depth }) => {
-  const depp = depth * 100;
-
-  const amunt = parseFloat(amount).toFixed(2);
-  console.log("amount", amunt);
   return (
     <tr>
       <td>
         {priceUsdt}
         <span
-          style={{ width: `${depp}%` }}
+          style={{ width: `${depth * 100}%` }}
           className=" depth-visualizer"
         ></span>
       </td>

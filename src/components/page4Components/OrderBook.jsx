@@ -6,7 +6,6 @@ const OrderBook = ({ coin }) => {
   // const coin = props.coin.toLowerCase();
 
   const [orderHistory, setOrderHistory] = useState([]);
-  const [coinPrice, setCoinPrice] = useState();
 
   useEffect(() => {
     const promise = axios
@@ -15,7 +14,6 @@ const OrderBook = ({ coin }) => {
           `/api/v3/depth?symbol=${coin}USDT&limit=6`
       )
       .then((resp) => {
-        console.log(resp.data);
         setOrderHistory(resp.data);
       });
   }, [orderHistory]);
@@ -39,6 +37,7 @@ const OrderBook = ({ coin }) => {
           <tbody>
             {orderHistory.bids?.map((order) => (
               <OrderEntry
+                key={order[0] * order[1]}
                 priceUsdt={order[0]}
                 amount={order[1]}
                 total={order[0] * order[1]}
@@ -60,6 +59,7 @@ const OrderBook = ({ coin }) => {
           <tbody>
             {orderHistory.bids?.map((order) => (
               <OrderEntry
+                key={order[0] * order[1]}
                 priceUsdt={order[0]}
                 amount={order[1]}
                 total={order[0] * order[1]}
