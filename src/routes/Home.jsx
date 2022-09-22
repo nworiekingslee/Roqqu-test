@@ -2,8 +2,6 @@ import CryptoContainer from "../components/homeComponents/CryptoContainer";
 import HomeHero from "../components/homeComponents/HomeHero";
 import Subnav from "../components/homeComponents/Subnav";
 import SideContent from "../components/homeComponents/SideContent";
-import { useEffect } from "react";
-import axios from "axios";
 
 // css import
 import "../styles/Home.css";

@@ -1,5 +1,5 @@
 import OrderEntry from "./OrderEntry";
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const OrderBook = ({ coin }) => {
@@ -8,7 +8,7 @@ const OrderBook = ({ coin }) => {
   const [orderHistory, setOrderHistory] = useState([]);
 
   useEffect(() => {
-    const promise = axios
+    axios
       .get(`https://api.binance.com/api/v3/depth?symbol=${coin}USDT&limit=6`)
       .then((resp) => {
         setOrderHistory(resp.data);
@@ -38,6 +38,7 @@ const OrderBook = ({ coin }) => {
                 priceUsdt={order[0]}
                 amount={order[1]}
                 total={order[0] * order[1]}
+                //not sure how depth is calculated, this is a placeholder, its indicator might appear too long for eth and bnb
                 depth={(order[0] * order[1]) / order[0]}
               />
             ))}
@@ -46,7 +47,7 @@ const OrderBook = ({ coin }) => {
         <div className="current-price">128299.304781 USDT</div>
 
         <table className="bull">
-          <thead>
+          <thead style={{ display: "none" }}>
             <tr>
               <th>PRICE(USDT)</th>
               <th>AMOUNT({coin})</th>
@@ -60,6 +61,7 @@ const OrderBook = ({ coin }) => {
                 priceUsdt={order[0]}
                 amount={order[1]}
                 total={order[0] * order[1]}
+                //not sure how depth is calculated, this is a placeholder, its indicator might appear too long for eth and bnb
                 depth={(order[0] * order[1]) / order[0]}
               />
             ))}
