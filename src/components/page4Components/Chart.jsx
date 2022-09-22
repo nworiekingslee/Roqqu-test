@@ -101,6 +101,9 @@ const Chart = (props) => {
 
   return (
     <>
+      {props.coin === "USDT" && (
+        <h2>{props.coin}/USDT won't work, Please try other exchanges</h2>
+      )}
       <div className="chart-wrapper" id="chart1" style={{ height: 500 }}></div>
       <h2 style={{ marginTop: "2rem" }}>Web socket Data</h2>
       {coinHistory.map((data, idx) => (
