@@ -71,8 +71,7 @@ const Chart = (props) => {
 
     axios
       .get(
-        process.env.REACT_APP_BASE_ENDPOINT +
-          `/api/v3/klines?symbol=${props.coin}USDT&interval=5m&limit=500`
+        `https://api.binance.com/api/v3/klines?symbol=${props.coin}USDT&interval=5m&limit=500`
       )
       .then((resp) => {
         candleSeries.setData(processKData(resp.data));
@@ -103,9 +102,9 @@ const Chart = (props) => {
   return (
     <>
       <div className="chart-wrapper" id="chart1" style={{ height: 500 }}></div>
-      <h2>Web socket Data</h2>
+      <h2 style={{ marginTop: "2rem" }}>Web socket Data</h2>
       {coinHistory.map((data, idx) => (
-        <ul>
+        <ul style={{ margin: "1rem" }}>
           <li key={idx}>
             {data ? (
               <p>

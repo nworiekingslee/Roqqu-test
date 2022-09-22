@@ -9,10 +9,7 @@ const OrderBook = ({ coin }) => {
 
   useEffect(() => {
     const promise = axios
-      .get(
-        process.env.REACT_APP_BASE_ENDPOINT +
-          `/api/v3/depth?symbol=${coin}USDT&limit=6`
-      )
+      .get(`https://api.binance.com/api/v3/depth?symbol=${coin}USDT&limit=6`)
       .then((resp) => {
         setOrderHistory(resp.data);
       });
