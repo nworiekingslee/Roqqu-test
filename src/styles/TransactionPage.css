@@ -154,7 +154,7 @@
         padding-left: 16px
       }
 
-      .order-entry-bar {
+      .depth-visualizer {
           position: absolute;
           top: 0;
           left:0;
@@ -162,7 +162,7 @@
           width: 100%;
       }
 
-      .bear .order-entry-bar {
+      .bear .depth-visualizer {
           background-color: #F07A642F;
       }
       
@@ -170,7 +170,7 @@
         color: #FF8686;
       }
 
-      .bull .order-entry-bar {
+      .bull .depth-visualizer {
           background-color: #13A5831C;
       }
 
@@ -181,13 +181,15 @@
       .order-book .current-price {
           padding: 1rem;
           border: 1px solid var(--primary-color);
-          background-color: var(--background);
+          /* background-color: red; */
+          width: 100%;
 
           display: flex;
           justify-content: center;
           align-items: center;
       }
 
+      
 
 
 

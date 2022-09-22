@@ -1,15 +1,15 @@
-const OrderEntry = ({ priceUsdt, amount, total, percentageWidth }) => {
+const OrderEntry = ({ priceUsdt, amount, total, depth }) => {
   return (
     <tr>
       <td>
         {priceUsdt}
-        <div
-          style={{ width: `${percentageWidth}` }}
-          className="order-entry-bar"
-        ></div>
+        <span
+          style={{ width: `${depth * 100}%` }}
+          className=" depth-visualizer"
+        ></span>
       </td>
-      <td>{amount}</td>
-      <td>{total}</td>
+      <td>{parseFloat(amount).toFixed(8)}</td>
+      <td>{parseFloat(total).toFixed(8)}</td>
     </tr>
   );
 };

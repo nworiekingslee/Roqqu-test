@@ -1,4 +1,4 @@
-import LineChart from "./LineChart";
+import Chart from "./Chart";
 
 // icons import
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -69,7 +69,7 @@ const ChartContainer = ({ coin }) => {
       </div>
 
       <div className="chart">
-        <LineChart coin={coin} />
+        <Chart coin={coin} />
       </div>
     </div>
   );

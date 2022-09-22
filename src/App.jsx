@@ -7,8 +7,11 @@ import TransactionPage from "./routes/TransactionPage";
 import "./styles/App.css";
 
 const App = () => {
+  const base_url = process.env.REACT_APP_BASE_ENDPOINT;
+  console.log("ENV", base_url);
   return (
     <div className="App">
+      {process.env.BASE_ENDPOINT}
       <Nav />
       <Switch>
         <Route
